@@ -1,0 +1,11 @@
+#code to read a list of n integers and find their medians
+val= eval(input("Enter a list:"))
+val.sort()
+s=len(val)
+mid = s//2
+if s%2==0:
+   m1,m2= mid -1, mid
+   med=(val[m1] + val[m2])/2
+else:
+   med=val[mid]
+print("median of the given list is:", med )
